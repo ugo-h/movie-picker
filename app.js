@@ -1,15 +1,12 @@
 const express = require('express');
 const {getAllBy, getOne, randomChoice, getAll} = require('./helper');
-const cors = require('cors');
+const { PORT } = require('./config');
 const app = express();
-const port = 9000;
+let port = PORT || 9000;
 
-const corsOptions = {
-    origin: 'http://localhost:3000',
-    optionsSuccessStatus: 200
-}
-   
 app.use(cors(corsOptions));
+
+app.get('/', async(req, res) => res.send('Working!'))
 
 app.get('/api/films/:genreId', async(req, res) => {
     const { genreId } = req.params;
