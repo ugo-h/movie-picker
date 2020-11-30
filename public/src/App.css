@@ -1,0 +1,47 @@
+.App {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction:  column;
+  min-height: 100vh;
+  background: #434aac;
+  background: linear-gradient(45deg, rgba(67,74,172,0.94) 0%, rgba(87,160,184,1) 100%) ,url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/movies-to-watch-1585258004.jpg?crop=1.00xw:1.00xh;0,0&resize=768:*');
+  background: linear-gradient(45deg,#5B5A91f4 0%, #67BAA7ff 100%) ,url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/movies-to-watch-1585258004.jpg?crop=1.00xw:1.00xh;0,0&resize=768:*');
+  /* background-size: cover; */
+  align-items: center;
+}
+
+.Preferences-modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn--call-to-action {
+  text-decoration: none;
+  transition: border 200ms;
+    cursor: pointer;
+    background: white;
+    border-radius: 60px;
+    color: black;
+    padding: 1rem 2rem;
+    border: 3px solid white;
+
+}
+.btn--call-to-action:hover{
+    color: #EC5283;
+    border: 3px solid  #EC5283;
+
+}
+.btn--configuration{
+  font-weight: 700;
+  margin: 1rem;
+  color: white;
+  font-size: 1rem;
+  cursor:pointer;
+  border: none;
+  background: none;
+}
+.btn--configuration:hover{  
+  border-bottom:  #EC5283 solid 2px;
+}

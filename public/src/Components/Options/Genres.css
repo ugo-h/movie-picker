@@ -1,0 +1,16 @@
+.Genres-list{
+    margin: 1rem;
+    padding: 0.5rem;
+    display: inline-block;
+    width: 160px;
+    height: 34px;
+    line-height: 30px;
+    position: relative;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+
+.Genres-list__item{
+    margin: 1rem;
+    
+}

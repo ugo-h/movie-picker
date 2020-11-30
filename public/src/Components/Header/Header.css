@@ -1,0 +1,21 @@
+.header{
+    position: relative;
+    height: 7rem;
+    margin:0;
+    width: 100%;
+}
+.logo{
+    font-family: 'Bevan', 'bodoni',sans-serif;
+    /* text-shadow: 2px 2px 2px #EC5283; */
+    cursor: pointer;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(0, -120%);
+}
+
+@media(max-width: 700px) {
+    .logo{
+        left:1rem;
+    }
+}

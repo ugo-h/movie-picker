@@ -5,7 +5,7 @@ const { PORT } = require('./config');
 let port = PORT || 9000;
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static('public/build'));
 
 app.get('/', async(req, res) => res.sendFile('./index.html'))
 
@@ -18,6 +18,7 @@ app.get('/api/films/:genreId', async(req, res) => {
     } else {
         allMovies = await getAll(pages);
     }
+    console.log(allMovies)
     const randomMovie = randomChoice(allMovies.films);
     const randomMovieFull = await getOne(randomMovie.filmId);
     randomMovieFull.rating = randomMovie.rating;
